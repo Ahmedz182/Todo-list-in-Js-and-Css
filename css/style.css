@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;400;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+body{
+    background-color: #fefefe;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: #363753;
+    font-weight: 600 !important;
+}
+.addTask{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.task{
+    border-radius: 10px;
+    padding: 12px;
+    min-width: 45vw;
+    border: 1px solid #dfe3ee;
+  
+}
+
+@media only screen and (max-width: 700px) {
+ .task{
+    border-radius: 10px;
+    padding: 12px;
+    min-width: 70vw;
+    border: 1px solid #dfe3ee;
+  
+}
+thead {
+    display: flex;
+    justify-content: center; /* Horizontally aligns the content */
+    align-items: center; /* Vertically aligns the content */
+    min-width: 80vw;
+    background-color: #5cd2c6;
+    border-radius: 10px 10px 0 0;
+    margin-top: 5vh;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem !important;
+   
+  }
+  
+tbody{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 80vw;
+    background-color: #dfe3ee;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 15px 10px 15px;
+    font-size:.9rem!important ;
+}
+}
+
+
+.task:focus{
+
+    outline:none;
+}
+
+.add{
+    margin-left: 10px;
+    background-color: #363753;
+    color: #fefefe;
+    padding: 15px;
+    border-radius: 10px;
+}
+.add:hover{
+  
+   
+    transform: rotate(5deg);
+    
+}
+table{
+    width: 100%;
+}
+
+thead {
+    display: flex;
+    justify-content: center; /* Horizontally aligns the content */
+    align-items: center; /* Vertically aligns the content */
+    max-width: 50vw;
+    background-color: #5cd2c6;
+    border-radius: 10px 10px 0 0;
+    margin-top: 5vh;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+  }
+  
+  thead th {
+    text-align: center; /* Centers the text inside the <th> tags */
+    font-weight: 600;
+    font-size: 1.1rem !important;
+}
+  
+tbody{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50vw;
+    background-color: #dfe3ee;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 15px 20px 15px;
+    font-size:.9rem!important ;
+
+}
+
+.mainTasks{
+    display: flex;
+    margin-right: 10px;
+    accent-color: #363753;
+}
+
+.footer{
+    position:absolute;
+    bottom: 0;
+    right: 1%;
+    font-size: .8rem !important;
+    font-weight: 500 !important;
+
+}
+
+.dark{
+    position:fixed;
+    bottom: 2%;
+    left: 1%;
+padding: 10px;
+padding-left: 15px !important;
+background-color: #379b91;
+color: #fefefe;
+border-color: transparent;
+border-radius: 20px 2px 20px 2px ;
+
+
+
+}
+.dark:active{
+    background-color: #fefefe;
+    border-color: transparent;
+    color: #363753;
+}
