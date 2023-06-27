@@ -127,7 +127,7 @@ tbody{
 .footer{
     position:absolute;
     bottom: 0;
-    right: 1%;
+    right: 5%;
     font-size: .8rem !important;
     font-weight: 500 !important;
 
@@ -136,7 +136,7 @@ tbody{
 .dark{
     position:fixed;
     bottom: 2%;
-    left: 1%;
+    left: 3%;
 padding: 10px;
 padding-left: 15px !important;
 background-color: #379b91;
