@@ -126,7 +126,7 @@ tbody{
 
 .footer{
     position:absolute;
-    bottom: 0;
+    bottom: 1%;
     right: 5%;
     font-size: .8rem !important;
     font-weight: 500 !important;
