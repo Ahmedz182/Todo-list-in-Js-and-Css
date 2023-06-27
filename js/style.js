@@ -4,7 +4,7 @@ const input = "input"
 
 let root = document.getElementById('root')
 let heading = document.createElement('h1')
-heading.innerText = "Todo List"
+heading.innerText = "TodoList"
 heading.className = "heading"
 root.appendChild(heading)
 
