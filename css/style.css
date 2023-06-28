@@ -183,17 +183,12 @@ td{
 button{
     background-color: #363753;
     color:#fefefe;
-    outline: none;
     border-radius: 10px;
     float: right;
     padding: 7px;
 
 }
 
-.btn{
-   float: right; 
-   
-}
 
 td:nth-child(1){
     width: 80%;
