@@ -143,7 +143,7 @@ input[type=checkbox]{
 } 
 
 .footer{
-    position:absolute;
+    position:fixed;
     bottom: 1%;
     right: 5%;
     font-size: .8rem !important;
@@ -177,6 +177,10 @@ tr{
     flex-direction: row;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #363753;
+    padding: 5px;
+    padding-left: 10px !important;
+    margin: 5px;
 
 }
 
@@ -195,10 +199,11 @@ button{
     float: right;
     padding: 8px;
     border: none;
+    margin-right: 5px ;
 }
 
 button:hover{
-    background-color: #5cd2c6;
+    background-color: #fefefe;
     color: #363753;
 }
 
@@ -208,12 +213,17 @@ td:nth-child(1){
 }
 td:nth-child(2){
     width: 20%;
- display: flex;
- justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
 img{
     width: 40px;
     height: 40px;
-  background-color: transparent;
-  padding: 10px;
+    background-color: transparent;
+    padding: 10px;
+}
+tr:hover{
+    background-color: #90d5cfac;
+    /* color: #379b91; */
+    border-radius: 10px;
 }

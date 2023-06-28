@@ -106,14 +106,10 @@ btn.onclick = function () {
         todoList.push(taskAdd.value)
         render();
 
-    } else {
-
-        console.log("empty");
     }
     console.table(todoList);
 
 };
-
 
 const render = () => {
 
@@ -121,22 +117,26 @@ const render = () => {
     document.querySelectorAll("td").forEach(function (e) { e.remove() })
     todoList.forEach((i, index) => {
 
+
         data += `
         <tr>
         <td>
-       
         ${index + 1} : <input type="checkbox"> ${i}
         </td>
         <td class="btn">
-        <button>Delete</button>
+        <button onclick="del">Delete</button>
         <button>Edit</button></>
         </td>
-        
         </tr>
+        
         `
         tbody.innerHTML = data
         taskAdd.value = ''
 
     })
+    function del() {
+        todoList.pop(i)
+        console.log(todoList.pop(i));
+    }
 
 }
