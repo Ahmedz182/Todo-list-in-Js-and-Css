@@ -14,7 +14,7 @@ divv.appendChild(heading)
 
 
 let logo = document.createElement("img")
-logo.src = "../asset/logo2.png"
+logo.src = "./asset/logo2.png"
 divv.appendChild(logo)
 
 let mainContainer = document.createElement("div")
