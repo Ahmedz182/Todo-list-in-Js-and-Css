@@ -6,6 +6,7 @@ A todo list app Pure Js and Css only with Dark mode.
 
 ## ScreenShots
 
+![Alt text](asset/SS0.jpg)
 ![Alt text](asset/SS1.png)
 ![Alt text](asset/SS2.jpg)
 ![Alt text](asset/SS3.jpg)
