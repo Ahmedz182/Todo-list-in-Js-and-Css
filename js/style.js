@@ -1,6 +1,7 @@
 //tags 
 const div = "div"
 const input = "input"
+let todoList = []
 
 let root = document.getElementById('root')
 let heading = document.createElement('h1')
@@ -21,13 +22,14 @@ let btn = document.createElement("i")
 btn.className = " fa fa-add add"
 mainContainer.appendChild(btn);
 
-btn.onclick = function () {
-    alert("I'm Alive")
-};
+
 
 let taskList = document.createElement(div)
 taskList.className = "taskList"
 root.appendChild(taskList)
+
+
+
 
 let table = document.createElement("table")
 table.className = "table"
@@ -38,40 +40,18 @@ thead.className = "thead"
 table.appendChild(thead)
 
 
-let tr = document.createElement("tr")
-thead.appendChild(tr)
+
 
 let subHead = document.createElement("th")
 subHead.innerText = "Your Tasks are here"
 subHead.className = "listhead"
-tr.appendChild(subHead)
+thead.appendChild(subHead)
 
 
 let tbody = document.createElement("tbody")
 tbody.className = "table"
 table.appendChild(tbody)
 
-let tr2 = document.createElement("tr")
-tr2.className = "mainTasks"
-tbody.appendChild(tr2)
-
-let check = document.createElement(input);
-check.type = "checkbox"
-tr2.appendChild(check);
-
-
-
-let td = document.createElement("td");
-td.innerText = "its my first task"
-tr2.appendChild(td);
-
-check.onclick = function () {
-    if (this.checked) {
-        td.style = "text-decoration: line-through"
-    } else {
-        td.style = "text-decoration: none"
-    }
-}
 
 
 let footertext = document.createElement("p")
@@ -108,3 +88,48 @@ let chnge = () => {
 };
 
 dark.onclick = chnge;
+
+btn.onclick = function () {
+
+
+    if (taskAdd.value != '') {
+        todoList.push(taskAdd.value)
+        render();
+
+    } else {
+
+        console.log("empty");
+    }
+    console.table(todoList);
+
+};
+
+
+
+
+
+const render = () => {
+
+    let data = ``
+    document.querySelectorAll("td").forEach(function (e) { e.remove() })
+    todoList.forEach((i, index) => {
+
+        data += `
+        <tr>
+        <td>
+       
+        ${index + 1} : <input type="checkbox"> ${i}
+        </td>
+        <td class="btn">
+        <button>Delete</button>
+        <button>Edit</button></>
+        </td>
+        
+        </tr>
+        `
+        tbody.innerHTML = data
+        taskAdd.value = ''
+
+    })
+
+}

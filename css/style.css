@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;400;600;700&display=swap'); */
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -52,6 +52,7 @@ thead {
   
 tbody{
     display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     min-width: 80vw;
@@ -59,6 +60,7 @@ tbody{
     border-radius: 0 0 10px 10px;
     padding: 10px 15px 10px 15px;
     font-size:.9rem!important ;
+    
 }
 }
 
@@ -107,7 +109,8 @@ thead {
 }
   
 tbody{
-    display: flex;
+    display:flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     max-width: 50vw;
@@ -124,6 +127,15 @@ tbody{
     accent-color: #363753;
 }
 
+input[type=checkbox]{
+   
+    color: #fefefe;
+    background-color: #fefefe;
+    accent-color:#363753 ;
+    cursor: pointer;
+
+} 
+
 .footer{
     position:absolute;
     bottom: 1%;
@@ -137,13 +149,13 @@ tbody{
     position:fixed;
     bottom: 2%;
     left: 3%;
-padding: 10px;
-padding-left: 15px !important;
-background-color: #379b91;
-color: #fefefe;
-border-color: transparent;
-border-radius: 20px 2px 20px 2px ;
-margin-left: 10px;
+    padding: 10px;
+    padding-left: 15px !important;
+    background-color: #379b91;
+    color: #fefefe;
+    border-color: transparent;
+    border-radius: 20px 2px 20px 2px ;
+    margin-left: 10px;
 
 
 }
@@ -151,4 +163,44 @@ margin-left: 10px;
     background-color: #fefefe;
     border-color: transparent;
     color: #363753;
+}
+
+tr{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+
+}
+
+td{
+    font-size: medium;
+    
+}
+.indexNo{
+    width: 20px;
+
+}
+button{
+    background-color: #363753;
+    color:#fefefe;
+    outline: none;
+    border-radius: 10px;
+    float: right;
+    padding: 7px;
+
+}
+
+.btn{
+   float: right; 
+   
+}
+
+td:nth-child(1){
+    width: 80%;
+   overflow-x: hidden;
+}
+td:nth-child(2){
+    width: 20%;
+ display: flex;
+ justify-content: space-evenly;
 }
