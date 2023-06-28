@@ -4,10 +4,18 @@ const input = "input"
 let todoList = []
 
 let root = document.getElementById('root')
+let divv = document.createElement("div")
+divv.className = "heading"
+root.appendChild(divv)
 let heading = document.createElement('h1')
 heading.innerText = "TodoList"
-heading.className = "heading"
-root.appendChild(heading)
+
+divv.appendChild(heading)
+
+
+let logo = document.createElement("img")
+logo.src = "../asset/logo2.png"
+divv.appendChild(logo)
 
 let mainContainer = document.createElement("div")
 mainContainer.className = "addTask"
@@ -45,6 +53,7 @@ table.appendChild(thead)
 let subHead = document.createElement("th")
 subHead.innerText = "Your Tasks are here"
 subHead.className = "listhead"
+subHead.style.color = "#363753"
 thead.appendChild(subHead)
 
 
