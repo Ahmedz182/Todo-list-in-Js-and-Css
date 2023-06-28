@@ -151,7 +151,7 @@ input[type=checkbox]{
 
 }
 
-.dark{
+.dark,.dark:hover{
     position:fixed;
     bottom: 2%;
     left: 3%;
@@ -162,8 +162,6 @@ input[type=checkbox]{
     border-color: transparent;
     border-radius: 20px 2px 20px 2px ;
     margin-left: 10px;
-
-
 }
 .dark:active{
     background-color: #fefefe;

@@ -69,7 +69,7 @@ footertext.className = "footer"
 root.appendChild(footertext)
 
 let dark = document.createElement("button")
-dark.innerText = "Magic 🪄"
+dark.innerText = "Dark Mode🌙"
 dark.className = "dark"
 root.appendChild(dark)
 
@@ -86,6 +86,7 @@ let chnge = () => {
         subHead.style.color = "#fefefe";
         heading.style.color = "#fefefe";
         footertext.style.color = "#fefefe";
+        dark.innerText = "Light Mode😎"
     } else if (currentBgColor === "rgb(43, 49, 49)") {
         btn.style.backgroundColor = "#363753";
         btn.style.color = "#fefefe";
@@ -94,6 +95,7 @@ let chnge = () => {
         subHead.style.color = "#fefefe";
         heading.style.color = "#363753";
         footertext.style.color = "#363753";
+        dark.innerText = "Dark Mode🌙"
     }
 };
 
