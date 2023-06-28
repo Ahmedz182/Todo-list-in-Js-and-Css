@@ -105,9 +105,6 @@ btn.onclick = function () {
 };
 
 
-
-
-
 const render = () => {
 
     let data = ``
