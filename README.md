@@ -4,7 +4,15 @@ A todo list app Pure Js and Css only with Dark mode.
 
 ## Demo: https://ahmedz182.github.io/Todo-list-in-Js-and-Css/
 
-## ScreenShots
+## Mobile ScreenShots
+
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
+
+## Desktop ScreenShots
 
 ![Alt text](asset/SS0.jpg)
 
