@@ -169,6 +169,8 @@ tr{
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -185,10 +187,13 @@ button{
     color:#fefefe;
     border-radius: 10px;
     float: right;
-    padding: 7px;
-
+    padding: 8px;
+    border: none;
 }
 
+button:hover{
+    background-color: #5cd2c6;
+}
 
 td:nth-child(1){
     width: 80%;

@@ -63,8 +63,9 @@ let dark = document.createElement("button")
 dark.innerText = "Magic 🪄"
 dark.className = "dark"
 root.appendChild(dark)
-let bg = document.body
 
+
+let bg = document.body
 let chnge = () => {
     let currentBgColor = getComputedStyle(bg).backgroundColor;
 
