@@ -114,31 +114,27 @@ btn.onclick = function () {
 };
 
 const render = () => {
-
-    let data = ``
-    document.querySelectorAll("td").forEach(function (e) { e.remove() })
-    todoList.forEach((i, index) => {
-
-
+    let data = '';
+    document.querySelectorAll("td").forEach(function (e) { e.remove() });
+    todoList.forEach((item, index) => {
         data += `
         <tr>
-        <td>
-        ${index + 1} : <input type="checkbox"> ${i}
-        </td>
-        <td class="btn">
-        <button onclick="del">Delete</button>
-        <button>Edit</button></>
-        </td>
+          <td>
+            ${index + 1} : <input type="checkbox"> ${item}
+          </td>
+          <td class="btn">
+            <button onclick="del(${index})">Delete</button>
+            <button>Edit</button>
+          </td>
         </tr>
-        
-        `
-        tbody.innerHTML = data
-        taskAdd.value = ''
+      `;
+    });
 
-    })
-    function del() {
-        todoList.pop(i)
-        console.log(todoList.pop(i));
-    }
+    tbody.innerHTML = data;
+    taskAdd.value = '';
+}
 
+function del(index) {
+    todoList.splice(index, 1);
+    render();
 }
