@@ -124,7 +124,7 @@ const render = () => {
           </td>
           <td class="btn">
             <button onclick="del(${index})">Delete</button>
-            <button>Edit</button>
+            <button onclick="edit(${index})">Edit</button>
           </td>
         </tr>
       `;
@@ -138,3 +138,12 @@ function del(index) {
     todoList.splice(index, 1);
     render();
 }
+
+function edit(index) {
+    const newValue = prompt("Enter the new value:");
+    if (newValue !== null) {
+        todoList[index] = newValue;
+        render();
+    }
+}
+
