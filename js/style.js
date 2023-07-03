@@ -133,7 +133,7 @@ const render = () => {
     tbody.innerHTML = data;
     taskAdd.value = '';
 }
-
+//edit function
 function del(index) {
     todoList.splice(index, 1);
     render();
