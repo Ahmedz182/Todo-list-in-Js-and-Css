@@ -1,6 +1,7 @@
 # Todo-list-in-Js-and-Css
 
-A todo list app Pure Js and Css only with Dark mode.
+A todo list in app Pure Js and Css only with Dark mode.
+fully responsive and fnctional.
 
 ## Demo: https://ahmedz182.github.io/Todo-list-in-Js-and-Css/
 
